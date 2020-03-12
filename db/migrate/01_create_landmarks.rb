@@ -7,3 +7,4 @@ class CreateLandmarks < ActiveRecord::Migration
     end
   end
 end
+
