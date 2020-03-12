@@ -1,5 +1,9 @@
 <h2>New Historical Figure</h2>
 <form action="/figures/" method="post">
   <input type="text" name="name" label="Name">
+   <% @landmarks.each do |landmark| %>
+    <input type="checkbox" name="figure[landmark_ids][]" id="<%= landmark.id %>" value="<%= landmark.id %>"><%= landmark.name %><br>
+  <% end %>
   <input type="submit" value="Submit">
+ 
 </form>
